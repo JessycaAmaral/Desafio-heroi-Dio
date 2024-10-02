@@ -1,0 +1,117 @@
+* {
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas nas dimensões totais dos elementos */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão da página */
+}
+
+:root {
+    /* Define variáveis de cor para facilitar a manutenção e personalização */
+    --text-base: #afb6c2; /* Cor base do texto */
+    --text-title: #d4ccb6; /* Cor do título do texto */
+    --background: #191816; /* Cor de fundo principal */
+    --form-background: #24221f; /* Cor de fundo para formulários */
+    --primary-color: #ffc632; /* Cor principal (destacada) */
+}
+
+body {
+    background: url('../images/pixel-game-t1wbphoik25fw7eo.jpg') center/cover no-repeat;
+     /* Define uma imagem de fundo centralizada e que cobre toda a área */
+    display: flex; /* Usa flexbox para organizar os elementos dentro do body */
+    flex-direction: column; /* Alinha os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente os elementos */
+    align-items: center; /* Centraliza horizontalmente os elementos */
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */
+}
+
+.box {
+    background: var(--form-background); /* Aplica a cor de fundo do formulário */
+    border-radius: 10px; /* Arredonda os cantos da caixa */
+}
+
+.box__none {
+    display: none; /* Esconde elementos com essa classe */
+}
+
+.box__result {
+    display: none; /* Inicialmente esconde o resultado */
+    text-align: center; /* Centraliza o texto */
+    background: var(--form-background); /* Cor de fundo igual ao formulário */
+    border-radius: 10px; /* Arredonda os cantos da caixa de resultado */
+    color: var(--text-title); /* Define a cor do texto do resultado */
+    font-size: 2rem; /* Define um tamanho de fonte maior para destaque */
+    font-style: normal; /* Define estilo de fonte normal */
+    font-weight: 600; /* Define um peso de fonte mais grosso */
+    padding: 10px; /* Adiciona preenchimento interno */
+}
+
+legend {
+    color: var(--text-title); /* Define a cor do texto do elemento legend */
+    font-size: 2rem; /* Define um tamanho de fonte maior para o legend */
+    font-style: normal; /* Define estilo de fonte normal */
+    font-weight: 600; /* Define um peso de fonte mais grosso */
+}
+
+.box__form {
+    display: flex; /* Usa flexbox para organizar os campos do formulário */
+    flex-direction: column; /* Alinha os campos em coluna */
+    align-items: center; /* Centraliza horizontalmente os campos */
+    gap: 10px; /* Adiciona espaço entre os campos */
+    padding: 30px; /* Adiciona preenchimento interno */
+}
+
+.box__title {
+    color: var(--text-base); /* Define a cor do texto do título do formulário */
+    font-size: 1rem; /* Tamanho de fonte padrão para o título */
+    font-style: normal; /* Define estilo de fonte normal */
+    font-weight: 500; /* Define um peso de fonte médio */
+}
+
+.box__user {
+    border: 2px solid var(--primary-color); /* Borda com a cor primária */
+    border-radius: 8px; /* Arredonda os cantos do campo de usuário */
+    padding: 12px 24px; /* Adiciona preenchimento interno para conforto */
+    width: 334px; /* Largura fixa para o campo */
+}
+
+.box__button {
+    color: var(--form-background); /* Define a cor do texto do botão */
+    font-size: 1.5rem; /* Tamanho de fonte maior para destaque no botão */
+    font-style: normal; /* Define estilo de fonte normal */
+    font-weight: 600; /* Define um peso de fonte mais grosso */
+    background: var(--primary-color); /* Cor de fundo do botão */
+    border: 2px solid var(--background); /* Borda com a cor de fundo principal */
+    border-radius: 8px; /* Arredonda os cantos do botão */
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 12px 24px; /* Adiciona preenchimento interno */
+    width: 200px; /* Largura fixa para o botão */
+}
+
+.box__button:hover {
+    cursor: pointer; /* Muda o cursor para indicar interatividade ao passar o mouse */
+}
+
+a {
+    color: var(--form-background); /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+.redes {
+    display: flex; /* Usa flexbox para organizar os ícones de redes sociais */
+    font-size: 24px; /* Tamanho da fonte para os ícones */
+    gap: 16px; /* Espaço entre os ícones */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    padding: 24px; /* Adiciona preenchimento ao redor da seção de redes */
+}
+
+.redes a {
+    display: flex; /* Usa flexbox para alinhar o conteúdo dos links de redes sociais */
+    align-items: center; /* Centraliza verticalmente os itens dentro do link */
+    justify-content: center; /* Centraliza horizontalmente os itens dentro do link */
+    padding: 16px; /* Adiciona preenchimento interno para os links */
+}
+
+.redes a:hover {
+    background: var(--primary-color); /* Muda o fundo ao passar o mouse */
+    border-radius: 50%; /* Arredonda os cantos para formar um círculo */
+}
